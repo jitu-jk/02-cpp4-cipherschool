@@ -1,1 +1,49 @@
-
+#include<bits/stdc++.h>
+using namespace std;
+class Node{
+ public:
+      int data;
+      next *node;
+   Node(int n)
+{
+     data=n;
+   //next=NULL;
+    next= nullptr;
+}
+};
+Node* makeLL{
+       int data;
+        cin>>data;
+Node* h=NULL;
+Node*temp= NULL;
+while(data!=-1)
+{
+  Node*newNode= new Node(data);
+    if(h=Null)
+     {
+       h=newnode;
+       temp=newnode;
+     }
+    else{
+      temp->next=newNode;
+      temp=newnode;
+   }
+    cin>>data;
+}
+  return h;
+}
+void print(Node*head){
+  Node*t=head;
+while(t!=NULL)
+{
+ cout<<t->data<<"->";
+  t=t->next;
+}
+ return;
+}
+int main()
+{
+Node* head= makeLL();
+print head();
+return 0;
+}
